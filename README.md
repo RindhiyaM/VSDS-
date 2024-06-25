@@ -165,6 +165,8 @@ The output of the given code is determined after compilation in the terminal.
 
 ![WhatsApp Image 2024-06-25 at 16 37 39_1b920b08](https://github.com/RindhiyaM/VSDS-/assets/173605041/063dbd54-9a8f-4a6d-9fbd-02e47ef740c8)
 
+running this program, we will see a menu with three options. You can issue tickets, pay for tickets, or exit the program. The program will keep running until you choose the exit option.
+
 ### Step 3:
 
 In this step the C program is converted to the RISC V instruction and this is detrmined using the command "riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o ticketterminal.o ticketterminal.c" . The main function are to be determined using the given command "riscv64-unknown-elf-objdump -d ticketterminal.o |less"
@@ -195,7 +197,7 @@ Hence the calculation after the "OFast" function
 
 ![last image](https://github.com/RindhiyaM/VSDS-/assets/173605041/dd0b1f19-1d61-4c7c-931d-b218ef7ffede)
 
-After determining the difference from executing the same function , the code can be optimized further.
+After determining the difference from executing the same function , the code can be optimized further.Hence the Automatic parking ticket vending machine is also determined in RISC V instructions using certain calculations 
 
 
 
