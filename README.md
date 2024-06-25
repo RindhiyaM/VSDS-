@@ -73,31 +73,38 @@ Now the calculation of RISC V processor is determined using the Calculator in th
 
 ### Code:
 
-#include <stdio.h>
-#include <stdlib.h>
+    #include <stdio.h>
+    #include <stdlib.h>
 
-int current_ticket = 0;
+    int current_ticket = 0;
 
-void issue_ticket() {
-    current_ticket++;
-    printf("Ticket issued: %d\n", current_ticket);
-}
+     void issue_ticket() 
+     {
+          current_ticket++;
+          printf("Ticket issued: %d\n", current_ticket);
+     }
 
-void pay_ticket(int ticket_number) {
-    if (ticket_number <= current_ticket && ticket_number > 0) {
-        printf("Ticket %d has been paid.\n", ticket_number);
-    } else {
+     void pay_ticket(int ticket_number)
+     {
+          if (ticket_number <= current_ticket && ticket_number > 0)
+          {
+          printf("Ticket %d has been paid.\n", ticket_number);
+          } 
+          else 
+          {
         printf("Invalid ticket number.\n");
+         }
     }
-}
 
-void show_menu() {
-    printf("1. Issue Ticket\n");
-    printf("2. Pay Ticket\n");
-    printf("3. Exit\n");
-}
+    void show_menu()
+    {
+       printf("1. Issue Ticket\n");
+       printf("2. Pay Ticket\n");
+       printf("3. Exit\n");
+    }
 
-int main() {
+    int main()
+    {
     int choice, ticket_number;
 
     while (1) {
@@ -121,25 +128,21 @@ int main() {
         }
     }
 
-    return 0;
-}
+       return 0;
+    }
+
+The give above is the C program  for a simple automated parking ticket vending machine. 
 
 ### Code explanation :
 
-#include <stdio.h>
-#include <stdlib.h>
-
-int current_ticket = 0;
-
-void issue_ticket() {
+1.void issue_ticket() {
     current_ticket++;
     printf("Ticket issued: %d\n", current_ticket);
+    }
    
     //This function increments the current_ticket variable by 1.It then prints the new ticket number.
-
-}
-
-void pay_ticket(int ticket_number) {
+    
+2.void pay_ticket(int ticket_number) {
     if (ticket_number <= current_ticket && ticket_number > 0) {
         printf("Ticket %d has been paid.\n", ticket_number);
     } else {
@@ -147,53 +150,38 @@ void pay_ticket(int ticket_number) {
     }
  
     //  This function takes an integer ticket_number as a parameter.It checks if the ticket_number is valid (i.e., it is greater than 0 and less than or equal to the current_ticket).If valid, it prints a confirmation message.If invalid, it prints an error message.
-}
 
-void show_menu() {
+3.void show_menu() {
     printf("1. Issue Ticket\n");
     printf("2. Pay Ticket\n");
     printf("3. Exit\n");
     
-    //This function prints the menu options to the user.
-}
+    //This function prints the menu options to the user
+    
+4.case 1:
+   issue_ticket();
+   break;
 
-int main() {
-    int choice, ticket_number;
-while (1) {
-        show_menu();
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
- switch (choice) {
-  case 1:
-                issue_ticket();
-                break;
+    //Calls the issue_ticket function to issue a new ticket.
+    
+  5.case 2:
+     printf("Enter ticket number to pay: ");
+     scanf("%d", &ticket_number);
+     pay_ticket(ticket_number);
+     break;
+             
+    //Prompts the user to enter the ticket number to pay.Calls the pay_ticket function with the entered ticket number. 
+    
+  6. case 3:
+       exit(0);
 
-                   //Calls the issue_ticket function to issue a new ticket.
-  case 2:
-                printf("Enter ticket number to pay: ");
-                scanf("%d", &ticket_number);
-                pay_ticket(ticket_number);
-                break;
+          //Exits the program
 
-                //Prompts the user to enter the ticket number to pay.Calls the pay_ticket function with the entered ticket number.  
+7.default:
+     printf("Invalid choice. Please try again.\n");
 
-   case 3:
-                exit(0);
-
-                
-  default:
-                printf("Invalid choice. Please try again.\n");
-        }
-    }
-
-return 0;
-}
-
-
-The give above is the C program  for a simple automated parking ticket vending machine. 
-
-
-
+     //Prints an error message if the user enters an invalid choice.
+    
 ### Functions :
 
 1.It includes functions to issue and pay for tickets, and a menu for user interaction.
