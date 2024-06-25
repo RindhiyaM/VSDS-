@@ -197,7 +197,7 @@ Hence the calculation after the "OFast" function
 
 ![last image](https://github.com/RindhiyaM/VSDS-/assets/173605041/dd0b1f19-1d61-4c7c-931d-b218ef7ffede)
 
-After determining the difference from executing the same function , the code can be optimized further.Hence the Automatic parking ticket vending machine is also determined in RISC V instructions using certain calculations 
+After determining the difference from executing the same function , the code can be optimized further.Hence the Automated parking ticket vending machine is also determined in RISC V instructions using certain calculations 
 
 
 
