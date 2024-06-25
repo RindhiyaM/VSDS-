@@ -1,4 +1,4 @@
-# VSDSquadron mini
+# VSDSquadron mini 
 
 The VSDSquadron Mini RISC-V is a development board based on the RISC-V architecture, which is an open-source instruction set architecture (ISA) known for its flexibility and extensibility. Here’s an overview of its features and significance:
 
