@@ -82,7 +82,7 @@ void issue_ticket() {
     current_ticket++;
     printf("Ticket issued: %d\n", current_ticket);
    
-    //This function increments the current_ticket variable by 1.It then prints the new ticket number.//
+    //This function increments the current_ticket variable by 1.It then prints the new ticket number.
 
 }
 
@@ -93,7 +93,7 @@ void pay_ticket(int ticket_number) {
         printf("Invalid ticket number.\n");
     }
  
-    //  This function takes an integer ticket_number as a parameter.It checks if the ticket_number is valid (i.e., it is greater than 0 and less than or equal to the current_ticket).If valid, it prints a confirmation message.If invalid, it prints an error message. //
+    //  This function takes an integer ticket_number as a parameter.It checks if the ticket_number is valid (i.e., it is greater than 0 and less than or equal to the current_ticket).If valid, it prints a confirmation message.If invalid, it prints an error message.
 }
 
 void show_menu() {
@@ -101,7 +101,7 @@ void show_menu() {
     printf("2. Pay Ticket\n");
     printf("3. Exit\n");
     
-    //This function prints the menu options to the user.//
+    //This function prints the menu options to the user.
 }
 
 int main() {
@@ -111,18 +111,18 @@ while (1) {
         printf("Enter your choice: ");
         scanf("%d", &choice);
  switch (choice) {
-   case 1:
+  case 1:
                 issue_ticket();
                 break;
 
-                //Calls the issue_ticket function to issue a new ticket.//
-   case 2:
+                   //Calls the issue_ticket function to issue a new ticket.
+  case 2:
                 printf("Enter ticket number to pay: ");
                 scanf("%d", &ticket_number);
                 pay_ticket(ticket_number);
                 break;
 
-                //Prompts the user to enter the ticket number to pay.Calls the pay_ticket function with the entered ticket number.//   
+                //Prompts the user to enter the ticket number to pay.Calls the pay_ticket function with the entered ticket number.  
 
    case 3:
                 exit(0);
@@ -138,6 +138,8 @@ return 0;
 
 
 The give above is the C program  for a simple automated parking ticket vending machine. 
+
+
 
 ### Functions :
 
