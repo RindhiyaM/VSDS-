@@ -240,6 +240,31 @@ Hence the calculation after the "OFast" function
 
 After determining the difference from executing the same function , the code can be optimized further.Hence the Automated parking ticket vending machine is also determined in RISC V instructions using certain calculations 
 
+# Assignment 3
+## SPIKE simulation and verification :
+Perform SPIKE simulation and verification with -O1 and -OFast optimizations, and run the RISC-V objdump.
+### Compile the program :
+
+1.Compile the program with different optimization levels:
+
+![j271](https://github.com/RindhiyaM/VSDS-/assets/173605041/22921d5c-0cfa-41c6-a3f1-b2ae999c8a55)
+
+2.DeBUG command : riscv64-unknown-elf-objdump -d ticketterminal.o |less
+
+![j273](https://github.com/RindhiyaM/VSDS-/assets/173605041/e3b8ffdf-3a2b-4f50-96e3-1e3b5a4d0173)
+
+3.spike simulation : spike pk ticketterminal.o
+
+![j272](https://github.com/RindhiyaM/VSDS-/assets/173605041/f19c0acd-2076-4064-ba12-f42f8a7256f2)
+
+4.Disassemble the binaries with objdump:
+
+![j274](https://github.com/RindhiyaM/VSDS-/assets/173605041/e3e0608b-5f5a-4333-83c7-4d8e6f4dca7a)
+
+
+
+
+
 
 
 
