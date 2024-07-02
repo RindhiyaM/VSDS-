@@ -269,29 +269,37 @@ Let's break down each instruction into its respective RISC-V instruction format 
 
 ### R-type: 
 Used for register-register operations
+
 #### Format: 
 opcode | rd | funct3 | rs1 | rs2 | funct7
+
 #### Instructions: 
 ADD, SUB, AND, OR, XOR, SLT, SRL, SLL
 
 ### I-type: 
 Used for immediate operations and loads
+
 #### Format:
 opcode | rd | funct3 | rs1 | imm
+
 #### Instructions:
 ADDI, LW
 
 ### S-type: 
 Used for stores
+
 #### Format: 
 opcode | imm[11:5] | rs2 | rs1 | funct3 | imm[4:0]
+
 #### Instructions:
 SW
 
 ### B-type: 
 Used for branches
+
 #### Format:
 opcode | imm[12] | imm[10:5] | rs2 | rs1 | funct3 | imm[4:1] | imm[11]
+
 #### Instructions: 
 BNE, BEQ
 
@@ -302,89 +310,145 @@ BNE, BEQ
 #### ADD r1, r2, r3
 
 opcode: 0110011
+
 funct3: 000
+
 funct7: 0000000
+
 rd: 00001 (r1)
+
 rs1: 00010 (r2)
+
 rs2: 00011 (r3)
+
 Binary: 0000000 00011 00010 000 00001 0110011
+
 Hex: 0x002080b3
 
 #### SUB r3, r1, r2
 
 opcode: 0110011
+
 funct3: 000
+
 funct7: 0100000
+
 rd: 00011 (r3)
+
 rs1: 00001 (r1)
+
 rs2: 00010 (r2)
+
 Binary: 0100000 00010 00001 000 00011 0110011
+
 Hex: 0x402100b3
 
 #### AND r2, r1, r3
 
 opcode: 0110011
+
 funct3: 111
+
 funct7: 0000000
+
 rd: 00010 (r2)
+
 rs1: 00001 (r1)
+
 rs2: 00011 (r3)
+
 Binary: 0000000 00011 00001 111 00010 0110011
+
 Hex: 0x003100b3
 
 #### OR r8, r2, r5
 
 opcode: 0110011
+
 funct3: 110
+
 funct7: 0000000
+
 rd: 01000 (r8)
+
 rs1: 00010 (r2)
+
 rs2: 00101 (r5)
+
 Binary: 0000000 00101 00010 110 01000 0110011
+
 Hex: 0x005140b3
 
 #### XOR r8, r1, r4
 
 opcode: 0110011
+
 funct3: 100
+
 funct7: 0000000
+
 rd: 01000 (r8)
+
 rs1: 00001 (r1)
+
 rs2: 00100 (r4)
+
 Binary: 0000000 00100 00001 100 01000 0110011
+
 Hex: 0x004080b3
 
 #### SLT r10, r2, r4 
 
 opcode: 0110011
+
 funct3: 010
+
 funct7: 0000000
+
 rd: 01010 (r10)
+
 rs1: 00010 (r2)
+
 rs2: 00100 (r4)
+
 Binary: 0000000 00100 00010 010 01010 0110011
+
 Hex: 0x004140b3
 
 #### SRL r16, r11, r2
 
 opcode: 0110011
+
 funct3: 101
+
 funct7: 0000000
+
 rd: 10000 (r16)
+
 rs1: 01011 (r11)
+
 rs2: 00010 (r2)
+
 Binary: 0000000 00010 01011 101 10000 0110011
+
 Hex: 0x002580b3
 
 #### SLL r15, r11, r2
 
 opcode: 0110011
+
 funct3: 001
+
 funct7: 0000000
+
 rd: 01111 (r15)
+
 rs1: 01011 (r11)
+
 rs2: 00010 (r2)
+
 Binary: 0000000 00010 01011 001 01111 0110011
+
 Hex: 0x0025c0b3
 
 ### I-type Instructions
@@ -392,21 +456,33 @@ Hex: 0x0025c0b3
 #### ADDI r12, r3, 5
 
 opcode: 0010011
+
 funct3: 000
+
 rd: 01100 (r12)
+
 rs1: 00011 (r3)
+
 imm: 000000000101
+
 Binary: 000000000101 00011 000 01100 0010011
+
 Hex: 0x00518193
 
 #### LW r13, r11, 2
 
 opcode: 0000011
+
 funct3: 010
+
 rd: 01101 (r13)
+
 rs1: 01011 (r11)
+
 imm: 000000000010
+
 Binary: 000000000010 01011 010 01101 0000011
+
 Hex: 0x00258603
 
 ### S-type Instructions
@@ -414,11 +490,17 @@ Hex: 0x00258603
 #### SW r3, r1, 4
 
 opcode: 0100011
+
 funct3: 010
+
 rs1: 00001 (r1)
+
 rs2: 00011 (r3)
+
 imm: 000000000100
+
 Binary: 0000000 00011 00001 010 00010 0100011
+
 Hex: 0x00310223
 
 ### B-type Instructions
@@ -426,21 +508,33 @@ Hex: 0x00310223
 #### BNE r0, r1, 20
 
 opcode: 1100011
+
 funct3: 001
+
 rs1: 00000 (r0)
+
 rs2: 00001 (r1)
+
 imm: 00000000010100 (splits into multiple parts)
+
 Binary: 0000000 00001 00000 001 00101 1100011
+
 Hex: 0x00102863
 
 #### BEQ r0, r0, 15
 
 opcode: 1100011
+
 funct3: 000
+
 rs1: 00000 (r0)
+
 rs2: 00000 (r0)
+
 imm: 00000000001111 (splits into multiple parts)
+
 Binary: 0000000 00000 00000 000 01111 1100011
+
 Hex: 0x00002663
 
 ### Here's a sample content for the file:
