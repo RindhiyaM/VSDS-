@@ -446,17 +446,29 @@ Hex: 0x00002663
 ### Here's a sample content for the file:
 
 ADD r1, r2, r3: 0x002080b3
+
 SUB r3, r1, r2: 0x402100b3
+
 AND r2, r1, r3: 0x003100b3
+
 OR r8, r2, r5: 0x005140b3
+
 XOR r8, r1, r4: 0x004080b3
+
 SLT r10, r2, r4: 0x004140b3
+
 SRL r16, r11, r2: 0x002580b3
+
 SLL r15, r11, r2: 0x0025c0b3
+
 ADDI r12, r3, 5: 0x00518193
+
 SW r3, r1, 4: 0x00310223
+
 BNE r0, r1, 20: 0x00102863
+
 BEQ r0, r0, 15: 0x00002663
+
 LW r13, r11, 2: 0x00258603
 
 
