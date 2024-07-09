@@ -565,6 +565,68 @@ BEQ r0, r0, 15: 0x00002663
 
 LW r13, r11, 2: 0x00258603
 
+# Assignment 5
+## RISC-V core in Verilog along with a testbench for functional simulation, you need to go through the following steps:
+
+"git clone http://github.com/vinayrayapati/rv32i.git my_ticket_rv32i" , " cd my_ticket_rv32i " are the commands used 
+
+Cloning is the process of creating a local copy of a remote repository. This allows you to have a complete copy of the repo
+
+![3rd image](https://github.com/RindhiyaM/VSDS-/assets/173605041/9af4fc9f-133a-4d33-8e27-edae12cb4afa)
+
+This will download the project into a local directory
+
+![1st image](https://github.com/RindhiyaM/VSDS-/assets/173605041/48a26cd8-ed53-4fb2-adcb-9d48ea88a5c5)
+
+"sudo apt update" , "sudo apt install inverilog gtkwave" are the commands used
+
+![2nd image](https://github.com/RindhiyaM/VSDS-/assets/173605041/3f12fb36-1123-406c-98ca-f83059dcffd3)
+
+![4th image](https://github.com/RindhiyaM/VSDS-/assets/173605041/835e58c5-e1a7-4736-938b-32cf18913296)
+
+# Output:
+
+## ADD
+
+![op 1](https://github.com/RindhiyaM/VSDS-/assets/173605041/c7bc3423-53ac-491d-bd63-28dc75f857e7)
+
+## SUB
+
+![op 2](https://github.com/RindhiyaM/VSDS-/assets/173605041/b8488fca-6d4b-4cb4-afec-789553333380)
+
+## AND
+
+![op 3](https://github.com/RindhiyaM/VSDS-/assets/173605041/0986c78a-5835-49fa-bbf8-78b1a7ab2d16)
+
+## SLT
+
+![op 4](https://github.com/RindhiyaM/VSDS-/assets/173605041/e49d5780-4e8c-49b3-bc08-5148a4f8a15f)
+
+## OR
+
+![op 7](https://github.com/RindhiyaM/VSDS-/assets/173605041/cca4380c-b36f-4864-b3ee-231d10447246)
+
+## XOR
+
+![op 8](https://github.com/RindhiyaM/VSDS-/assets/173605041/418121a9-7868-4978-8cc0-dbb29f7f9fe8)
+
+## BEQ
+
+![op 10](https://github.com/RindhiyaM/VSDS-/assets/173605041/472aab09-64b1-4622-bcf3-ff32ef9346e1)
+
+## BNE
+
+![op 9](https://github.com/RindhiyaM/VSDS-/assets/173605041/60c3b5e8-efd3-48a7-85fd-6e22fc9bd902)
+
+
+
+
+
+
+
+
+
+
 
 
 
