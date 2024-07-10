@@ -618,7 +618,169 @@ This will download the project into a local directory
 
 ![op 9](https://github.com/RindhiyaM/VSDS-/assets/173605041/60c3b5e8-efd3-48a7-85fd-6e22fc9bd902)
 
+# Assignment 6
 
+## Overview
+
+The Automated Parking Ticket Vending Machine is designed to facilitate easy and efficient ticket dispensing in parking lots. Using the VSDSquadron Mini, a versatile microcontroller board, the system will automate the process of ticket issuing, payment processing, and entry/exit management.
+
+## Components
+
+### 1.VSDSquadron Mini Microcontroller Board
+
+* Central control unit
+* Interfaces with all other components
+
+### 2.LCD Display
+
+* Displays instructions and information to users
+* Shows the status of the transaction
+
+### 3.Keypad
+
+* Allows users to input information such as license plate numbers, parking duration, etc.
+
+### 4.Ticket Printer
+
+* Prints parking tickets with relevant information
+* Could be a thermal printer for durability and ease of use
+
+### 5.Card Reader/Payment Terminal
+
+* Facilitates payment via credit/debit cards or NFC payments
+* Integrates with a payment gateway
+
+### 6.Sensors
+
+* Entry/Exit Sensors: Detects vehicle entry and exit
+* Presence Sensor: Ensures the vehicle is properly positioned before issuing a ticket
+
+### 7.Barrier Gate
+
+* Controls vehicle entry and exit
+* Interfaces with the microcontroller for automated control
+
+### 8.Network Module
+
+* Facilitates communication with a central server for data logging, remote monitoring, and maintenance
+
+### 9.Power Supply
+
+* Provides necessary power to all components
+* Includes backup battery for uninterrupted operation
+
+## Pin Diagram
+
+Below is a conceptual pin diagram for the Automated Parking Ticket Vending Machine using the VSDSquadron Mini:
+
+### VSDSquadron Mini Microcontroller
+
+#### Power (VCC, GND)
+
+#### LCD Display
+   * Data Pins: D4-D7 (Digital Pins 4-7)
+  
+   * Control Pins: RS (Digital Pin 2), E (Digital Pin 3)
+   
+   * Power Pins: VCC, GND
+
+#### Keypad
+  
+   * Row Pins: R1-R4 (Digital Pins 8-11)
+  
+   * Column Pins: C1-C3 (Digital Pins 12-14)
+  
+   * Ticket Printer
+  
+   * Data Pin: Tx (Digital Pin 15)
+   
+   * Control Pin: Print (Digital Pin 16)
+  
+   * Power Pins: VCC, GND
+     
+#### Card Reader/Payment Terminal
+
+   * Data Pins: Rx, Tx (Digital Pins 17, 18)
+     
+   * Power Pins: VCC, GND
+     
+#### Sensors
+
+   * Entry/Exit Sensor: Digital Pins 19, 20
+     
+   * Presence Sensor: Digital Pin 21
+     
+   * Power Pins: VCC, GND
+     
+#### Barrier Gate Control
+
+   * Control Pin: Digital Pin 22
+     
+   * Power Pins: VCC, GND
+     
+#### Network Module
+
+   * Data Pins: SPI or I2C Pins (depends on module type)
+     
+   * Power Pins: VCC, GND
+     
+#### Power Supply
+
+   * VCC, GND Pins
+   * 
+## Block Diagram
+
+ +----------------------+
+ |   VSDSquadron Mini   |
+ +----------------------+
+                   |
+          +----------------+----------------+
+          |                |                |
+    +-----+-----+    +-----+-----+    +-----+-----+
+    |   LCD     |    |  Keypad   |    | Ticket    |
+    |  Display  |    +-----------+    |  Printer  |
+    +-----------+                     +-----------+
+          |                               
+  +-------+-------+                       
+  |  Card Reader  |                       
+  +---------------+                       
+          |                               
+  +-------+-------+                       
+  |  Sensors      |                       
+  +-------+-------+                       
+          |                               
+  +-------+-------+                       
+  | Barrier Gate  |                       
+  +---------------+                       
+          |                               
+  +-------+-------+                       
+  | Network Module|                       
+  +---------------+                       
+          |                              
+  +-------+-------+                      
+  | Power Supply  |                      
+  +---------------+                       
+          |                               
+  (Backup Battery)
+
+## Operation to be performed
+
+  * Vehicle Detection: Entry sensor detects the vehicle.
+    
+  * User Interaction: User inputs information via the keypad and views instructions on the LCD display.
+    
+  * Ticket Issuing: Microcontroller processes the input and prints a ticket using the ticket printer.
+
+  * Payment: User makes payment via the card reader/payment terminal.
+    
+  * Gate Operation: Upon successful payment, the barrier gate opens to allow vehicle entry.
+    
+  * Data Logging: All transaction data is logged and communicated to a central server via the network module for monitoring and management.
+    
+  * This design ensures a streamlined and user-friendly experience for automated parking ticket vending, utilizing the capabilities of the VSDSquadron Mini microcontroller.
+
+  
+   
 
 
 
