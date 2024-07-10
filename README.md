@@ -727,41 +727,6 @@ Below is a conceptual pin diagram for the Automated Parking Ticket Vending Machi
 #### Power Supply
 
    * VCC, GND Pins
-   * 
-## Block Diagram
-
- +----------------------+
- |   VSDSquadron Mini   |
- +----------------------+
-                   |
-          +----------------+----------------+
-          |                |                |
-    +-----+-----+    +-----+-----+    +-----+-----+
-    |   LCD     |    |  Keypad   |    | Ticket    |
-    |  Display  |    +-----------+    |  Printer  |
-    +-----------+                     +-----------+
-          |                               
-  +-------+-------+                       
-  |  Card Reader  |                       
-  +---------------+                       
-          |                               
-  +-------+-------+                       
-  |  Sensors      |                       
-  +-------+-------+                       
-          |                               
-  +-------+-------+                       
-  | Barrier Gate  |                       
-  +---------------+                       
-          |                               
-  +-------+-------+                       
-  | Network Module|                       
-  +---------------+                       
-          |                              
-  +-------+-------+                      
-  | Power Supply  |                      
-  +---------------+                       
-          |                               
-  (Backup Battery)
 
 ## Operation to be performed
 
