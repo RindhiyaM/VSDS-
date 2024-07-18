@@ -744,8 +744,11 @@ Below is a conceptual pin diagram for the Automated Parking Ticket Vending Machi
     
   * This design ensures a streamlined and user-friendly experience for automated parking ticket vending, utilizing the capabilities of the VSDSquadron Mini microcontroller.
 
-  
-   
+# Illustration of the  desired Project :
+
+https://drive.google.com/file/d/12BmLKFu9hcAQtrLfAxfRT7QlEjkdFsHg/view?usp=drive_link
+
+X_____X_____X_____X_____X_____X
 
 
 
